@@ -15,43 +15,16 @@
                     </h1>
                 </div>
             </div>
-            <div id="search" class="row">
-                <div class="eight columns">
-                    <input id="tb-search" type="text" placeholder="What you want to eat ?" class="u-full-width">
-                </div>
-                <div class="four columns">
-                    <button id="btn-search">Find Nutrition Info</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="columns">
-					<table class="ui-full-width">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Brand</th>
-                            <th>Calories</th>
-                            <th>Total Fat</th>
-                            <th>Serving Unit</th>
-                            <th>Serving Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-                
-            </div>
+            <search-bar></search-bar>
+            <result-table></result-table>
         </div>
         <!-- Scripts -->
         <script type="text/javascript" src="../static/bower_components/riot/riot.js"></script>
+        <script type="text/javascript" src="../static/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="application/javascript" src="../static/tags/search-bar.js"></script>
+        <script type="application/javascript" src="../static/tags/result-table.js"></script>
+        <script type="application/javascript">
+            riot.mount("*");
+        </script>
     </body>
 </html>

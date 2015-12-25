@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "riot": "~2.3.12",
-    "skeleton": "skeleton-css#~2.0.4"
+    "skeleton": "skeleton-css#~2.0.4",
+    "jquery": "~2.1.4"
   }
 }
