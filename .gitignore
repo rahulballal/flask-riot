@@ -29,3 +29,4 @@ node_modules
 
 # Compiled Python Files
 *.pyc
+src/static/bower_components

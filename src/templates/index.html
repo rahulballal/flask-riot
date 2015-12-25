@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Flask Riot!</title>
-  </head>
-  <body>
-    <h1> Welcome to Flask Riot!</h1>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Flask Riot!</title>
+        <link rel="stylesheet" type="text/css" href="../static/bower_components/skeleton/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../static/bower_components/skeleton/css/skeleton.css">
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="header" class="row">
+                <div class="column">
+                    <h1>
+                    Know how much to burn on the treadmill :)
+                    </h1>
+                </div>
+            </div>
+            <div id="search" class="row">
+                <div class="eight columns">
+                    <input id="tb-search" type="text" placeholder="What you want to eat ?" class="u-full-width">
+                </div>
+                <div class="four columns">
+                    <button id="btn-search">Find Nutrition Info</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns">
+					<table class="ui-full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Brand</th>
+                            <th>Calories</th>
+                            <th>Total Fat</th>
+                            <th>Serving Unit</th>
+                            <th>Serving Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script type="text/javascript" src="../static/bower_components/riot/riot.js"></script>
+    </body>
 </html>

@@ -16,5 +16,9 @@
     "./src/static/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "riot": "~2.3.12",
+    "skeleton": "skeleton-css#~2.0.4"
+  }
 }
