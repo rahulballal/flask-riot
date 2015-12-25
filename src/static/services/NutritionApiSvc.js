@@ -4,7 +4,7 @@ var $ = $ || {};
 var NutritionApi = (function($){
     return {
         findNutritionData : function(term){
-            var url = "http://localhost:5000/search/" + term;
+            var url = "search/" + term;
             return $.getJSON(url);
         }
     }
