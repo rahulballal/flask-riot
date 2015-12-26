@@ -1,2 +1,1 @@
-#!/usr/bin/env bash
-web : python ./src/server.py production
+web : python ./src/server.py
