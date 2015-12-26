@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rahulballal/flask-riot#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "gulp-riot": "^0.4.3"
   }
 }
