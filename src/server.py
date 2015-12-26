@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response
 from data import NutrionixAgent, ApiConfiguration
-import json
+import json, sys
 
 api_conf = ApiConfiguration()
 api_conf.url = "https://nutritionix-api.p.mashape.com/v1_1/search/"
@@ -26,5 +26,8 @@ def search(search_term):
     return Response(result, mimetype='application/json')
 
 if __name__ == '__main__':
-    server.run(debug=True)
+    if len(sys.argv) == 1:
+        server.run(debug=True)
+    else:
+        server.run(host="0.0.0.0",port=80, debug=True)
 
