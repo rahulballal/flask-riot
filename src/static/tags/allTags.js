@@ -19,6 +19,11 @@ riot.tag2('search-bar', '<div id="search" class="row"> <div class="eight columns
     }
     this.valueEntered = function(e){
         this.searchTerm = e.target.value;
+        if(e.keyCode === 13){
+            this.loadData();
+
+        }
+
         console.log(this.searchTerm);
     }
 }, '{ }');
